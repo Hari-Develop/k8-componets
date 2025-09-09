@@ -3,6 +3,9 @@ kind: Pod
 metadata:
   name: demo-pod
   namespace: roboshop
+  labels:
+    course: DevOps
+    Student: "hari"
 spec:
   containers:
   - name: demo-world
