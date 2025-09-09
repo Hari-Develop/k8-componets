@@ -6,6 +6,8 @@ metadata:
   labels:
     course: DevOps
     Student: "hari"
+  annotations:
+    roboshop: "this is roboshop project pod"
 spec:
   containers:
   - name: demo-world
