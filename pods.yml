@@ -9,3 +9,6 @@ spec:
     image: nginx
     ports:
     - containerPort: 80
+  - name: alma-linux
+    image: almalinux
+    command: ['sh', '-c', 'echo "hello, kubernetes" && sleep  3600']
