@@ -1,7 +1,7 @@
 apiVersion: v1 
-kind: configMap 
+kind: ConfigMap 
 metadata:
-  name: roboshop-configmap
+  name: roboshopConfig
 data:
   class: DevOps
   time: "4:30_AM"
