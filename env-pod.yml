@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  namespace: roboshop
+  labels:
+    student: "hari"
+    school: "raju high school"
+  annotations:
+    teacher: "Siva"
+    domain: "data"
+spec:
+  containers:
+  - name: env-pod
+    image: nginx
+    ports:
+    - containerPort: 80
+    env:
+    - name: raju 
+      value: helo there
