@@ -5,7 +5,7 @@ metadata:
   namespace: roboshop
   labels:
     student: "hari"
-    school: "raju high school"
+    school: "raju_high_school"
   annotations:
     teacher: "Siva"
     domain: "data"
