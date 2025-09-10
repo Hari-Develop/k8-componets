@@ -1,0 +1,21 @@
+apiVersion: v1 
+kind: Pod
+metadata: 
+  name: pod-config
+sepc:
+  containers:
+  - name: pod-config-container
+    image: nginx
+    ports:
+    - containerPorts: 80
+    env:
+    - name: config-env
+      valueFrom:
+        configMapKeyRef:
+          name: roboshop-configmap
+          key: class
+    - name: config-env-time
+      valueFrom: 
+        configMapKeyRef:
+          name: roboshop-configmap-time
+          key: time

@@ -1,0 +1,7 @@
+apiVersion: v1 
+kind: configMap 
+metadata:
+  name: roboshop-configmap
+data:
+  class: DevOps
+  time: "4:30_AM"
