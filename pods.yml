@@ -17,3 +17,7 @@ spec:
   - name: alma-linux
     image: almalinux
     command: ['sh', '-c', 'echo "hello, kubernetes" && sleep  3600']
+    env:
+    - name: DevOps
+      value: "Hello from the environment"
+      
