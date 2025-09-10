@@ -12,10 +12,10 @@ spec:
     - name: config-env
       valueFrom:
         configMapKeyRef:
-          name: roboshop-configmap
+          name: roboshop-config
           key: class
     - name: config-env-time
       valueFrom: 
         configMapKeyRef:
-          name: roboshop-configmap-time
+          name: roboshop-config
           key: time
