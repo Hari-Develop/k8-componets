@@ -4,7 +4,7 @@ metadata:
   name: service_pod
 spec:
   containers:
-  - name: service_pod
+  - name: service-pod
     image: nginx
     ports:
     - containerPort: 80
