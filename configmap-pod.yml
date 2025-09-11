@@ -19,3 +19,19 @@ spec:
         configMapKeyRef:
           name: roboshop-config
           key: time
+
+
+--- 
+apiVersion: v1 
+kind: Pod
+metadata: 
+  name: pod-config-1
+spec:
+  containers:
+  - name: pod-config-container
+    image: nginx
+    ports:
+    - containerPort: 80
+    envFrom:
+    - configMapRef:
+        name: roboshop-config
