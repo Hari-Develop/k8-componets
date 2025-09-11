@@ -9,12 +9,12 @@ spec:
     ports:
     - containerPort: 80
     env:
-    - name: config-env
+    - name: class
       valueFrom:
         configMapKeyRef:
           name: roboshop-config
           key: class
-    - name: config-env-time
+    - name: time
       valueFrom: 
         configMapKeyRef:
           name: roboshop-config
