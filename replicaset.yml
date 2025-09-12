@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: relicaset-nginx
+  labels:
+    project: banking
+    env: dev 
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: banking
+      env: dev 
+  template:
+    metadata:
+      labels:
+        project: banking
+        env: dev 
+    spec:
+      containers:
+      - name: nginx 
+        image: nginx 

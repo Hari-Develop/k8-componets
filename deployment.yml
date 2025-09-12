@@ -1,0 +1,25 @@
+apiVersion: apps/v1 
+kind: Deployment 
+metadata: 
+  name: deployment-set
+  labels:
+    project: collage
+    student: B.com
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      project: collage
+      student: B.com
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        project: collage
+        student: B.com
+    spec:
+      containers:
+      - name: nginx-pod
+        image: nginx
+        ports:
+        - containerPort: 80
