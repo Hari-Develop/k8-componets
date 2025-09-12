@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: nginx-pod
-        image: nginx:1.29.1
+        image: nginx:1.28.0
         ports:
         - containerPort: 80
