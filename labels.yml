@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: lables
-  lables:
+  labels:
     name: "hari"
     address: "gachibowli"
 spec:
