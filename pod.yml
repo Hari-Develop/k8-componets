@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: login
-  namespce: ecommerace
+  namespace: ecommerace
 spec:
   containers:
   - name: login
