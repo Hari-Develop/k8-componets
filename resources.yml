@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata: 
   name: resource-demo
-  lables:
+  labels:
     name: "resources_pod"
     usage: "limiting_the_cpu_usage"
   annotations:
@@ -16,7 +16,7 @@ spec:
     resources:
       requests:
         cpu: "100m"
-        memory: "64mi"
+        memory: "64MI"
       limits:
         cpu: "125m"
-        memory: "124mi"
+        memory: "124MI"
