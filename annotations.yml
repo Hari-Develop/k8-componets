@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod 
+metadta: 
+  name: annotations
+  labels:
+    hari: "lives_in_hyd"
+    place: "hyderabad"
+  annotations:
+    addrees: " Gachibolwi and vinayakanagar"
+    employee: "software engineer"
+spec:
+  containers:
+  - name: annotations
+    image: nginx
+    ports:
+    - containerPort: 80
