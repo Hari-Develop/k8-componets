@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap_pod
+  labels:
+    name: "hari"
+spec:
+  containers:
+  - name: configmap_pod
+    image: nginx
+    envFrom:
+    - configMapRef:
+        name: special-config 
+  restartPolicy: Never

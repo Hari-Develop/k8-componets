@@ -1,0 +1,11 @@
+apiVersion: v1 
+kind: ConfigMap
+metadata: 
+  name: configMap-Pod
+  labels:
+    hari: "DevOps_Engineer"
+  annotations:
+    Address: "India Gachibowli"
+data:
+  Remote_job: "Invisiable"
+  trainer: "Sivakumarreddy"
