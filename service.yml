@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: service
 spec:
+  type: NodePort
   selector:
     name: service-labels        # must exist on your Pods
     connection: nodeport        # just a label; optional if your Pods have it
