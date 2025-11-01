@@ -5,7 +5,7 @@ metadata:
   labels:
     name: "service-labels"
     connection: "nodeport"
-sepc:
+spec:
   containers:
   - name: service-containers
     image: nginx 
