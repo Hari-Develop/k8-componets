@@ -10,5 +10,4 @@ spec:
     image: nginx
     envFrom:
     - configMapRef:
-        name: special-config 
-  restartPolicy: Never
+        name: configmap
