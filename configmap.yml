@@ -1,7 +1,7 @@
 apiVersion: v1 
 kind: ConfigMap
 metadata: 
-  name: configMap
+  name: configmap
   labels:
     hari: "DevOps_Engineer"
   annotations:
