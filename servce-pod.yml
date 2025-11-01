@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod 
+metadata:
+  name: service-pod 
+  labels:
+    name: "service-labels"
+    connection: "nodeport"
+sepc:
+  containers:
+  - name: service-containers
+    image: nginx 
+    ports:
+    - containerPort: 80 
