@@ -9,5 +9,3 @@ sepc:
   containers:
   - name: service-containers
     image: nginx 
-    ports:
-    - containerPort: 80 

@@ -1,11 +1,12 @@
 apiVersion: v1
-kind: Service 
+kind: Service
 metadata:
   name: service
-selector:
-  name: "service-labels"
-  connection: "nodeport"
-ports:
-- protocol: TCP 
-  port: 80 # service port
-  targetPort: 80 # contianer port
+spec:
+  selector:
+    name: service-labels        # must exist on your Pods
+    connection: nodeport        # just a label; optional if your Pods have it
+  ports:
+    - protocol: TCP
+      port: 80                  # service port
+      targetPort: 80            # container port
