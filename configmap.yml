@@ -1,7 +1,7 @@
 apiVersion: v1 
 kind: ConfigMap
 metadata: 
-  name: configMap-Pod
+  name: configMap
   labels:
     hari: "DevOps_Engineer"
   annotations:
