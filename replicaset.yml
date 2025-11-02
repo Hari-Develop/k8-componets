@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata: 
+  name: replicaset-manifest
+  labels:
+    app: catalogue
+    tier: backend
+spec:
+  replicas: 3
+  selector:
+    matchlables:
+      tier: backend 
+  template:
+    metadata:
+      labels:
+        tier: backend
+    spec:
+      containers:
+      - name: replcaset-container
+        image: nginx
+        
