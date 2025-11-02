@@ -6,9 +6,10 @@ metadata:
     app: catalogue
     tier: backend
 spec:
+  # modify replicas according to your case
   replicas: 3
   selector:
-    matchlabels:
+    matchLabels:
       tier: backend 
   template:
     metadata:
