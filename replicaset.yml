@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: replcaset-container
-        image: nginx
+        image: nginx:mainline-alpine3.22
