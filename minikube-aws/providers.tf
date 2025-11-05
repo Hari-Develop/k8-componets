@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "aws-terraform-remote-state"
-    key = "minikube"
+    bucket = "aws-terraform-remote-stat"
+    key = "minikube/terraform.tfstate"
     region = "us-east-1"
     dynamodb_table = "aws-terraform-locking"
   }
