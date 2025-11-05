@@ -9,7 +9,7 @@ terraform {
     bucket = "aws-terraform-remote-stat"
     key = "minikube/terraform.tfstate"
     region = "us-east-1"
-    use_lockfile = "aws-terraform-locking"
+    use_lockfile = true
   }
 }
 
