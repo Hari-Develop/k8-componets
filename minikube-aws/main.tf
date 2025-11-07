@@ -6,7 +6,7 @@ module "minikube" {
   aws_instance_type = "t3.medium"
   ssh_public_key = "~/.ssh/id_ed25519.pub"
   aws_subnet_id = "subnet-06442d65b25eb4cbb"
-  hosted_zone = "dotmain.online"
+  hosted_zone = "dotdomain.online"
   hosted_zone_private = false
 
   tags = {
