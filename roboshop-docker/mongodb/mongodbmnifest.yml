@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mongo-db
+  namespace: ecommerace
+  labels:
+    app: mongo
+    tier: db
+    business: ecommerace
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mongo
+      tier: db
+      business: ecommerace
+  template:
+    metadata:
+      lables:
+        app: mongo
+        tier: db
+        business: ecommerace
+    spec:
+      containers:
+      - name: mongo-db
+        image: harinadhareddy/mongodb:v1
+        imagePullPolicy: Always
+        
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: mongodb-Service
+  namespace: ecommerace
+  lables:
+    app: mongo
+    tier: db
+    business: ecommerace
+spec:
+  selector:
+    app: mongo
+    tier: db
+    business: ecommerace
+  ports:
+  - protocol: TCP
+    port: 27017 #service_port
+    targetPort: 27017 #container-port
+
+
+        
